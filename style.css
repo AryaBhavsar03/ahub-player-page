@@ -1,0 +1,319 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    color: black;
+    background-color: #eceff1;
+    overflow-x: hidden;
+}
+
+#hublogo {
+    width: 3.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logoandtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.log {
+    padding-left: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.equipped-skin {
+    width: 3.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pfp {
+    display: block;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background: #283593;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    color: white;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .searchBar {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+nav .searchBar input[type="search"] {
+    background: transparent;
+    width: 40vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color:#283593;
+}
+
+nav .searchBar input[type="search"]::placeholder {
+    color: rgb(136, 136, 136)
+}
+
+nav .create {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+i {
+    color: black;
+}
+
+/* Main */
+
+main {
+    position: relative;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 30vh auto 50px;
+    column-gap: 3.5rem;
+    position: relative;
+}
+
+main .container .left{
+    height: max-content;
+    position: sticky;
+    top: 5.4rem;
+}
+
+.left .profileStats{
+    text-align: center;
+    margin-top: 1rem;
+    background: white;
+    padding-top: 6rem;
+    box-shadow:  0 0.5em 0.5em rgba(0, 0, 0, 0.16), 0 0.6em 0.6em rgba(0, 0, 0, 0.16);
+}
+
+.profileSkin{
+    padding-left: 1rem;
+}
+
+main .container .left .profileStats h4 {
+    font-size: 35px;
+    letter-spacing: 1.5px;
+}
+
+main .container .left .profileStats p {
+    font-size: 20px;
+    color: rgb(136, 135, 135);
+    letter-spacing: 4px;
+}
+
+.playerInformation {
+    border-top: 2px solid rgba(165, 165, 165, 0.329);
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.playerInformation .leftSpan{
+    font-size: 20px;
+    text-align: left;
+    float: left;
+}
+
+.playerInformation .rightSpan{
+    font-size: 20px;
+    text-align: right;
+    float: right;
+}
+
+.lastBorder{
+    border-bottom: 2px solid rgba(165, 165, 165, 0.329);
+}
+
+/* Profile Pic */
+
+.profile1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    color: black;
+    margin: 200px 100px -100px;
+}
+
+#mainpfp {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Level */
+
+.levelInfo{
+    padding-top: 10px;
+}
+
+.levelBar {
+    display: inline-block;
+    border: 1px solid;
+    border-color: black;
+    width: 80%;
+    height: 10px;
+    background-color: rgb(202, 202, 202);
+    margin: 0 20px 20px 20px;
+}
+
+.levelFill {
+    height: 100%;
+    width: 50%;
+    background-color: #283593;
+    transition: width 0.5s ease;
+}
+
+.current-level {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    padding-right: 125px;
+}
+
+.currentxp {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.xpneeded {
+    font-size: 20px;
+    color: black;
+}
+
+/* Button (took this code from the agariohub website using inspect and adjusted it)*/
+
+.button {
+    box-sizing: border-box;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    width: 80%;
+    margin: 0.6em 1% 0 1%;
+    border-radius: 2px;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.16), 0 0.3em 0.3em rgba(0, 0, 0, 0.16);
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+}
+
+/* Right Section (AKA the Comments and Items In Mall */
+
+.right {
+    height: max-content;
+    position: sticky;
+    top: 5.4rem;
+}
+
+.topBar {
+    display: flex;
+    margin-top: 12.2rem;
+    background: rgba(180, 180, 180, 0.452);
+    font-size: 2rem;
+    box-shadow:  0 0.5em 0.5em rgba(0, 0, 0, 0.16), 0 0.6em 0.6em rgba(0, 0, 0, 0.16);
+}
+
+.commentSection {
+    text-align: center;
+    background: white;
+    box-shadow:  0 0.5em 0.5em rgba(0, 0, 0, 0.16), 0 0.6em 0.6em rgba(0, 0, 0, 0.16);
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.commentSection textarea{
+    height: 270px;
+    width: 90%;
+    font-size: 1.3rem;
+    resize: none;
+}
+
+.commentSection .button {
+    box-sizing: border-box;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    width: 10%;
+    margin: 0.6em 1% 0 1%;
+    border-radius: 2px;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.16), 0 0.3em 0.3em rgba(0, 0, 0, 0.16);
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+
+}
+
+#comments {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+}
+
+#itemsinMall {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+}
+
+.right .topBar #comments:hover, .right .topBar .active {
+    border-top: 3px solid #283593;
+}
+
+.right .topBar #itemsinMall:hover {
+    border-top: 3px solid #283593;
+}
+
